@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>Add New Product</h3>
+    <div class="container m-5">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <input type="submit" name="submit" valeu="Add Product" />
+        </form>
+    </div>
+{% endblock %}
